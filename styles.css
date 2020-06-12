@@ -1,21 +1,20 @@
-#imgContainer {
-  position: relative;
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
 }
 
-#myCarousel {
-  padding-top: 150px;
-  margin: auto;
+#imgContainer {
+  position: relative;
 }
 
 #aboutContainer p {
   text-align: center;
   padding-top: 50px;
-}
-#aboutContainer #aboutImgs {
-  height: 5px;
-  width: 10px;
-  padding-left: 5px;
-  background-color: black;
 }
 
 #page-container {
@@ -33,16 +32,6 @@
   background-color: white;
   color: black;
   width: 70%;
-}
-
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: lightgray;
-  color: black;
-  text-align: center;
 }
 
 #golf {
@@ -64,7 +53,9 @@
 }
 
 .card {
+  margin-bottom: 10px;
   background-color: lightgray;
+  color: black;
 }
 
 .container {
