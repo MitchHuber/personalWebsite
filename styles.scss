@@ -1,133 +1,238 @@
-$font-color: black;
-$background-color: lightgray;
+@media (min-width: 400px) {
+  $font-color: black;
+  $background-color: lightgray;
 
-%footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: $background-color;
-  color: $font-color;
-  text-align: center;
-}
-
-#imgContainer{
-  position: relative;
-}
-#aboutContainer p {
-  text-align: center;
-  padding-top: 50px;
-}
-#page-container {
-  position: relative;
-  min-height: 100%;
-}
-#content-wrap {
-padding-bottom: 30px;
-}
-#table{
-  margin-top: 150px;
-  border: solid black 2px;
-  background-color: white;
-  color: $font-color;
-  width:70%;
-}
-#footer{
-  @extend %footer;
-}
-#golf{
-  padding-top: 10px;
-  padding-left: 160px;
-  width: 700px;
-  height: 520px;
-}
-#btns{
-  padding-left: 225px;
-}
-.card-deck{
-  padding-top: 50px;
-  padding-right: 100px;
-  padding-bottom: 40px;
-  color: black;
-}
-.card{
-  margin-bottom: 10px;
-  background-color: $background-color;
-  color: $font-color;
-}
-.container{
-margin-right: 100px;
-padding-top: 10px;
-}
-.display-4{
-  text-align: center;
-  padding-bottom: 15px;
-}
-.jumbotron{
-  display: grid;
-  width:90%;
-  margin-top: 10px;
-  background-color: $background-color;
-  height: 100%;
-  color:$font-color;
-  margin-right: 10px;
-    p{
-      color: $font-color;
+  #footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color;
+    color: $font-color;
+    text-align: center;
+  }
+  #table{
+    margin-bottom: 30px;
+    border: solid black 2px;
+    background-color: white;
+    color: $font-color;
+    width:70%;
+  }
+  #golf{
+    visibility: hidden;
+  }
+  #aboutContainer p {
+    text-align: center;
+    padding-top: 50px;
+  }
+  #aboutImgs{
+    img{
+      width: 100px;
+      height: 100px;
     }
+
+  }
+  .navbar-collapse.in {
+      display: block !important;
+  }
+  .jumbotron{
+    display: grid;
+    width:90%;
+    margin-top: 10px;
+    background-color: $background-color;
+    height: 100%;
+    color:$font-color;
+    margin-right: 10px;
+      p{
+        color: $font-color;
+      }
+  }
+  .card-deck{
+    padding-bottom: 40px;
+    color: black;
+  }
+  .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $background-color;
+    color: $font-color;
+  }
+  .list-group{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .list-group-item{
+    text-align: center;
+    color:$font-color;
+    background-color: $background-color;
+  }
+  .fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  p{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  img{
+    height:250px;
+    width: 200px;
+  }
+  body{
+    color: white;
+    background-color: black;
+  }
+  ul{
+    list-style-type: square;
+  }
+  a{
+    color: white;
+    text-align: left;
+    text-decoration: none;
+  }
 }
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-.fa-github{
-  background: white;
-  border-radius: 50%;
-}
-.fa-facebook{
-  width: 65px;
-  background: #3b579d;
-  color: white;
-  border-radius: 50%;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-  border-radius: 50%;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-  border-radius: 50%;
-}
-.list-group{
-  padding-top: 120px;
-  padding-right: 100px;
-}
-.list-group-item{
-  text-align: center;
-  color:$font-color;
-  background-color: $background-color;
-}
-p{
-  font-size: 18px;
-  padding-bottom: 30px;
-}
-img{
-  height:250px;
-  width: 200px;
-}
-body{
-  color: white;
-  background-color: black;
-}
-ul{
-  list-style-type: square;
-}
-a{
-  color: white;
-  text-align: left;
-  text-decoration: none;
+@media (min-width:992px){
+  $font-color: black;
+  $background-color: lightgray;
+  %footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color;
+    color: $font-color;
+    text-align: center;
+  }
+  #aboutImgs{
+    img{
+      width: 225px;
+      height: 225px;
+    }
+
+  }
+  #imgContainer{
+    position: relative;
+  }
+  #aboutContainer p {
+    text-align: center;
+    padding-top: 50px;
+  }
+  #page-container {
+    position: relative;
+    min-height: 100%;
+  }
+  #content-wrap {
+    padding-bottom: 30px;
+  }
+  #table{
+    margin-top: 150px;
+    border: solid black 2px;
+    background-color: white;
+    color: $font-color;
+    width:70%;
+  }
+  #footer{
+    @extend %footer;
+  }
+  #golf{
+    visibility: visible;
+    padding-top: 10px;
+    padding-left: 160px;
+    width: 700px;
+    height: 520px;
+  }
+  #btns{
+    padding-left: 225px;
+  }
+  .card-deck{
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    color: black;
+  }
+  .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $background-color;
+    color: $font-color;
+  }
+  .container{
+  margin-right: 100px;
+  padding-top: 10px;
+  }
+  .display-4{
+      text-align: center;
+      padding-bottom: 15px;
+  }
+  .jumbotron{
+    display: grid;
+    width:90%;
+    margin-top: 10px;
+    background-color: $background-color;
+    height: 100%;
+    color:$font-color;
+    margin-right: 10px;
+      p{
+        color: $font-color;
+      }
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-github{
+    background: white;
+    border-radius: 50%;
+  }
+  .fa-facebook{
+    width: 65px;
+    background: #3b579d;
+    color: white;
+    border-radius: 50%;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50%;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+  }
+  .list-group{
+    padding-top: 120px;
+    padding-right: 100px;
+  }
+  .list-group-item{
+    text-align: center;
+    color:$font-color;
+    background-color: $background-color;
+  }
+  p{
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+  img{
+    height:250px;
+    width: 200px;
+  }
+  body{
+    color: white;
+    background-color: black;
+  }
+  ul{
+    list-style-type: square;
+  }
+  a{
+    color: white;
+    text-align: left;
+    text-decoration: none;
+  }
 }

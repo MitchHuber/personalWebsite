@@ -1,152 +1,267 @@
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: lightgray;
-  color: black;
-  text-align: center;
-}
+@media (min-width: 400px) {
+  #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+  }
 
-#imgContainer {
-  position: relative;
-}
+  #table {
+    margin-bottom: 30px;
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    width: 70%;
+  }
 
-#aboutContainer p {
-  text-align: center;
-  padding-top: 50px;
-}
+  #golf {
+    visibility: hidden;
+  }
 
-#page-container {
-  position: relative;
-  min-height: 100%;
-}
+  #aboutContainer p {
+    text-align: center;
+    padding-top: 50px;
+  }
 
-#content-wrap {
-  padding-bottom: 30px;
-}
+  #aboutImgs img {
+    width: 100px;
+    height: 100px;
+  }
 
-#table {
-  margin-top: 150px;
-  border: solid black 2px;
-  background-color: white;
-  color: black;
-  width: 70%;
-}
+  .navbar-collapse.in {
+    display: block !important;
+  }
 
-#golf {
-  padding-top: 10px;
-  padding-left: 160px;
-  width: 700px;
-  height: 520px;
-}
+  .jumbotron {
+    display: grid;
+    width: 90%;
+    margin-top: 10px;
+    background-color: lightgray;
+    height: 100%;
+    color: black;
+    margin-right: 10px;
+  }
+  .jumbotron p {
+    color: black;
+  }
 
-#btns {
-  padding-left: 225px;
-}
+  .card-deck {
+    padding-bottom: 40px;
+    color: black;
+  }
 
-.card-deck {
-  padding-top: 50px;
-  padding-right: 100px;
-  padding-bottom: 40px;
-  color: black;
-}
+  .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    color: black;
+  }
 
-.card {
-  margin-bottom: 10px;
-  background-color: lightgray;
-  color: black;
-}
+  .list-group {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
-.container {
-  margin-right: 100px;
-  padding-top: 10px;
-}
+  .list-group-item {
+    text-align: center;
+    color: black;
+    background-color: lightgray;
+  }
 
-.display-4 {
-  text-align: center;
-  padding-bottom: 15px;
-}
+  .fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
 
-.jumbotron {
-  display: grid;
-  width: 90%;
-  margin-top: 10px;
-  background-color: lightgray;
-  height: 100%;
-  color: black;
-  margin-right: 10px;
-}
-.jumbotron p {
-  color: black;
-}
+  p {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
+  img {
+    height: 250px;
+    width: 200px;
+  }
 
-.fa-github {
-  background: white;
-  border-radius: 50%;
-}
+  body {
+    color: white;
+    background-color: black;
+  }
 
-.fa-facebook {
-  width: 65px;
-  background: #3b579d;
-  color: white;
-  border-radius: 50%;
-}
+  ul {
+    list-style-type: square;
+  }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-  border-radius: 50%;
+  a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+  }
 }
+@media (min-width: 992px) {
+  #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+  }
 
-.fa-instagram {
-  background: #125688;
-  color: white;
-  border-radius: 50%;
-}
+  #aboutImgs img {
+    width: 225px;
+    height: 225px;
+  }
 
-.list-group {
-  padding-top: 120px;
-  padding-right: 100px;
-}
+  #imgContainer {
+    position: relative;
+  }
 
-.list-group-item {
-  text-align: center;
-  color: black;
-  background-color: lightgray;
-}
+  #aboutContainer p {
+    text-align: center;
+    padding-top: 50px;
+  }
 
-p {
-  font-size: 18px;
-  padding-bottom: 30px;
-}
+  #page-container {
+    position: relative;
+    min-height: 100%;
+  }
 
-img {
-  height: 250px;
-  width: 200px;
-}
+  #content-wrap {
+    padding-bottom: 30px;
+  }
 
-body {
-  color: white;
-  background-color: black;
-}
+  #table {
+    margin-top: 150px;
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    width: 70%;
+  }
 
-ul {
-  list-style-type: square;
-}
+  #golf {
+    visibility: visible;
+    padding-top: 10px;
+    padding-left: 160px;
+    width: 700px;
+    height: 520px;
+  }
 
-a {
-  color: white;
-  text-align: left;
-  text-decoration: none;
+  #btns {
+    padding-left: 225px;
+  }
+
+  .card-deck {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    color: black;
+  }
+
+  .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    color: black;
+  }
+
+  .container {
+    margin-right: 100px;
+    padding-top: 10px;
+  }
+
+  .display-4 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .jumbotron {
+    display: grid;
+    width: 90%;
+    margin-top: 10px;
+    background-color: lightgray;
+    height: 100%;
+    color: black;
+    margin-right: 10px;
+  }
+  .jumbotron p {
+    color: black;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-github {
+    background: white;
+    border-radius: 50%;
+  }
+
+  .fa-facebook {
+    width: 65px;
+    background: #3b579d;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .list-group {
+    padding-top: 120px;
+    padding-right: 100px;
+  }
+
+  .list-group-item {
+    text-align: center;
+    color: black;
+    background-color: lightgray;
+  }
+
+  p {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  img {
+    height: 250px;
+    width: 200px;
+  }
+
+  body {
+    color: white;
+    background-color: black;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
